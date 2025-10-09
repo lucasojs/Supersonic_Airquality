@@ -1,0 +1,983 @@
+#==============================================================================
+# tracerinfo.dat: Created by GEOS-CHEM at 2021/06/12 19:54
+#
+# ****** CUSTOMIZED FOR NOx-Ox-Hydrocarbon-Aerosol SIMULATION *****
+#
+# This file contains name weight and index information about GEOS-CHEM
+# tracers.  It is read by routine "ctm_tracerinfo.pro" of the GAMAP package.
+#
+# File Format:
+# -----------------------------------------------------------------------------
+# NAME     (A8   )  Tracer name (up to 8 chars)
+#  --      (1X   )  1-character spacer
+# FULLNAME (A30  )  Full tracer name (up to 30 chars)
+# MOLWT    (E10.0)  Molecular weight (kg/mole)
+# C        (I3   )  For HC's: # moles C/moles tracer; otherwise set=1
+# TRACER   (I9   )  Tracer number (up to 9 digits)
+# SCALE    (E10.3)  Standard scale factor to convert to unit given below
+#  --      (1X   )  1-character spacer
+# UNIT     (A40  )  Unit string
+#
+#==============================================================================
+# GEOS-CHEM tracers [ppbv]
+#==============================================================================
+NO       NO tracer                      3.000E-02  1        1 1.000E+09 ppbv
+O3       O3 tracer                      4.800E-02  1        2 1.000E+09 ppbv
+PAN      PAN tracer                     1.210E-01  1        3 1.000E+09 ppbv
+CO       CO tracer                      2.800E-02  1        4 1.000E+09 ppbv
+ALK4     ALK4 tracer                    1.200E-02  4        5 1.000E+09 ppbC
+ISOP     ISOP tracer                    1.200E-02  5        6 1.000E+09 ppbC
+HNO3     HNO3 tracer                    6.300E-02  1        7 1.000E+09 ppbv
+H2O2     H2O2 tracer                    3.400E-02  1        8 1.000E+09 ppbv
+ACET     ACET tracer                    1.200E-02  3        9 1.000E+09 ppbC
+MEK      MEK tracer                     1.200E-02  4       10 1.000E+09 ppbC
+ALD2     ALD2 tracer                    1.200E-02  2       11 1.000E+09 ppbC
+RCHO     RCHO tracer                    5.800E-02  1       12 1.000E+09 ppbv
+MVK      MVK tracer                     7.000E-02  1       13 1.000E+09 ppbv
+MACR     MACR tracer                    7.000E-02  1       14 1.000E+09 ppbv
+PMN      PMN tracer                     1.470E-01  1       15 1.000E+09 ppbv
+PPN      PPN tracer                     1.350E-01  1       16 1.000E+09 ppbv
+R4N2     R4N2 tracer                    1.190E-01  1       17 1.000E+09 ppbv
+PRPE     PRPE tracer                    1.200E-02  3       18 1.000E+09 ppbC
+C3H8     C3H8 tracer                    1.200E-02  3       19 1.000E+09 ppbC
+CH2O     CH2O tracer                    3.000E-02  1       20 1.000E+09 ppbv
+C2H6     C2H6 tracer                    1.200E-02  2       21 1.000E+09 ppbC
+N2O5     N2O5 tracer                    1.050E-01  1       22 1.000E+09 ppbv
+HNO4     HNO4 tracer                    7.900E-02  1       23 1.000E+09 ppbv
+MP       MP tracer                      4.800E-02  1       24 1.000E+09 ppbv
+DMS      DMS tracer                     6.200E-02  1       25 1.000E+09 ppbv
+SO2      SO2 tracer                     6.400E-02  1       26 1.000E+09 ppbv
+SO4      SO4 tracer                     9.600E-02  1       27 1.000E+09 ppbv
+SO4s     SO4s tracer                    9.600E-02  1       28 1.000E+09 ppbv
+MSA      MSA tracer                     9.600E-02  1       29 1.000E+09 ppbv
+NH3      NH3 tracer                     1.700E-02  1       30 1.000E+09 ppbv
+NH4      NH4 tracer                     1.800E-02  1       31 1.000E+09 ppbv
+NIT      NIT tracer                     6.200E-02  1       32 1.000E+09 ppbv
+NITs     NITs tracer                    6.200E-02  1       33 1.000E+09 ppbv
+BCPI     BCPI tracer                    1.200E-02  1       34 1.000E+09 ppbv
+OCPI     OCPI tracer                    1.200E-02  1       35 1.000E+09 ppbv
+BCPO     BCPO tracer                    1.200E-02  1       36 1.000E+09 ppbv
+OCPO     OCPO tracer                    1.200E-02  1       37 1.000E+09 ppbv
+DST1     DST1 tracer                    2.900E-02  1       38 1.000E+09 ppbv
+DST2     DST2 tracer                    2.900E-02  1       39 1.000E+09 ppbv
+DST3     DST3 tracer                    2.900E-02  1       40 1.000E+09 ppbv
+DST4     DST4 tracer                    2.900E-02  1       41 1.000E+09 ppbv
+SALA     SALA tracer                    3.140E-02  1       42 1.000E+09 ppbv
+SALC     SALC tracer                    3.140E-02  1       43 1.000E+09 ppbv
+Br2      Br2 tracer                     1.600E-01  1       44 1.000E+09 ppbv
+Br       Br tracer                      8.000E-02  1       45 1.000E+09 ppbv
+BrO      BrO tracer                     9.600E-02  1       46 1.000E+09 ppbv
+HOBr     HOBr tracer                    9.700E-02  1       47 1.000E+09 ppbv
+HBr      HBr tracer                     8.100E-02  1       48 1.000E+09 ppbv
+BrNO2    BrNO2 tracer                   1.260E-01  1       49 1.000E+09 ppbv
+BrNO3    BrNO3 tracer                   1.420E-01  1       50 1.000E+09 ppbv
+CHBr3    CHBr3 tracer                   2.530E-01  1       51 1.000E+09 ppbv
+CH2Br2   CH2Br2 tracer                  1.740E-01  1       52 1.000E+09 ppbv
+CH3Br    CH3Br tracer                   9.500E-02  1       53 1.000E+09 ppbv
+MPN      MPN tracer                     9.300E-02  1       54 1.000E+09 ppbv
+ISOPN    ISOPN tracer                   1.470E-01  1       55 1.000E+09 ppbv
+MOBA     MOBA tracer                    1.140E-01  1       56 1.000E+09 ppbv
+PROPNN   PROPNN tracer                  1.190E-01  1       57 1.000E+09 ppbv
+HAC      HAC tracer                     7.400E-02  1       58 1.000E+09 ppbv
+GLYC     GLYC tracer                    6.000E-02  1       59 1.000E+09 ppbv
+MMN      MMN tracer                     1.490E-01  1       60 1.000E+09 ppbv
+RIP      RIP tracer                     1.180E-01  1       61 1.000E+09 ppbv
+IEPOX    IEPOX tracer                   1.180E-01  1       62 1.000E+09 ppbv
+MAP      MAP tracer                     7.600E-02  1       63 1.000E+09 ppbv
+NO2      NO2 tracer                     4.600E-02  1       64 1.000E+09 ppbv
+NO3      NO3 tracer                     6.200E-02  1       65 1.000E+09 ppbv
+HNO2     HNO2 tracer                    4.700E-02  1       66 1.000E+09 ppbv
+N2O      N2O tracer                     4.400E-02  1       67 1.000E+09 ppbv
+OCS      OCS tracer                     6.000E-02  1       68 1.000E+09 ppbv
+CH4      CH4 tracer                     1.600E-02  1       69 1.000E+09 ppbv
+BrCl     BrCl tracer                    1.150E-01  1       70 1.000E+09 ppbv
+HCl      HCl tracer                     3.600E-02  1       71 1.000E+09 ppbv
+CCl4     CCl4 tracer                    1.520E-01  1       72 1.000E+09 ppbv
+CH3Cl    CH3Cl tracer                   5.000E-02  1       73 1.000E+09 ppbv
+CH3CCl3  CH3CCl3 tracer                 1.330E-01  1       74 1.000E+09 ppbv
+CFCX     CFCX tracer                    1.870E-01  1       75 1.000E+09 ppbv
+HCFCX    HCFCX tracer                   1.170E-01  1       76 1.000E+09 ppbv
+CFC11    CFC11 tracer                   1.370E-01  1       77 1.000E+09 ppbv
+CFC12    CFC12 tracer                   1.210E-01  1       78 1.000E+09 ppbv
+HCFC22   HCFC22 tracer                  8.600E-02  1       79 1.000E+09 ppbv
+H1211    H1211 tracer                   1.650E-01  1       80 1.000E+09 ppbv
+H1301    H1301 tracer                   1.490E-01  1       81 1.000E+09 ppbv
+H2402    H2402 tracer                   2.600E-01  1       82 1.000E+09 ppbv
+Cl       Cl tracer                      3.500E-02  1       83 1.000E+09 ppbv
+ClO      ClO tracer                     5.100E-02  1       84 1.000E+09 ppbv
+HOCl     HOCl tracer                    5.200E-02  1       85 1.000E+09 ppbv
+ClNO3    ClNO3 tracer                   9.700E-02  1       86 1.000E+09 ppbv
+ClNO2    ClNO2 tracer                   8.100E-02  1       87 1.000E+09 ppbv
+ClOO     ClOO tracer                    6.700E-02  1       88 1.000E+09 ppbv
+OClO     OClO tracer                    6.700E-02  1       89 1.000E+09 ppbv
+Cl2      Cl2 tracer                     7.100E-02  1       90 1.000E+09 ppbv
+Cl2O2    Cl2O2 tracer                   1.030E-01  1       91 1.000E+09 ppbv
+H2O      H2O tracer                     1.800E-02  1       92 1.000E+09 ppbv
+SO4g     SO4g tracer                    9.600E-02  1       93 1.000E+09 ppbv
+#==============================================================================
+# GEOS-CHEM tracers [molec/cm2/s]
+#==============================================================================
+NO       NO tracer                      3.000E-02  1     1001 1.000E+00 molec/cm2/s
+O3       O3 tracer                      4.800E-02  1     1002 1.000E+00 molec/cm2/s
+PAN      PAN tracer                     1.210E-01  1     1003 1.000E+00 molec/cm2/s
+CO       CO tracer                      2.800E-02  1     1004 1.000E+00 molec/cm2/s
+ALK4     ALK4 tracer                    1.200E-02  4     1005 1.000E+00 atoms C/cm2/s
+ISOP     ISOP tracer                    1.200E-02  5     1006 1.000E+00 atoms C/cm2/s
+HNO3     HNO3 tracer                    6.300E-02  1     1007 1.000E+00 molec/cm2/s
+H2O2     H2O2 tracer                    3.400E-02  1     1008 1.000E+00 molec/cm2/s
+ACET     ACET tracer                    1.200E-02  3     1009 1.000E+00 atoms C/cm2/s
+MEK      MEK tracer                     1.200E-02  4     1010 1.000E+00 atoms C/cm2/s
+ALD2     ALD2 tracer                    1.200E-02  2     1011 1.000E+00 atoms C/cm2/s
+RCHO     RCHO tracer                    5.800E-02  1     1012 1.000E+00 molec/cm2/s
+MVK      MVK tracer                     7.000E-02  1     1013 1.000E+00 molec/cm2/s
+MACR     MACR tracer                    7.000E-02  1     1014 1.000E+00 molec/cm2/s
+PMN      PMN tracer                     1.470E-01  1     1015 1.000E+00 molec/cm2/s
+PPN      PPN tracer                     1.350E-01  1     1016 1.000E+00 molec/cm2/s
+R4N2     R4N2 tracer                    1.190E-01  1     1017 1.000E+00 molec/cm2/s
+PRPE     PRPE tracer                    1.200E-02  3     1018 1.000E+00 atoms C/cm2/s
+C3H8     C3H8 tracer                    1.200E-02  3     1019 1.000E+00 atoms C/cm2/s
+CH2O     CH2O tracer                    3.000E-02  1     1020 1.000E+00 molec/cm2/s
+C2H6     C2H6 tracer                    1.200E-02  2     1021 1.000E+00 atoms C/cm2/s
+N2O5     N2O5 tracer                    1.050E-01  1     1022 1.000E+00 molec/cm2/s
+HNO4     HNO4 tracer                    7.900E-02  1     1023 1.000E+00 molec/cm2/s
+MP       MP tracer                      4.800E-02  1     1024 1.000E+00 molec/cm2/s
+DMS      DMS tracer                     6.200E-02  1     1025 1.000E+00 molec/cm2/s
+SO2      SO2 tracer                     6.400E-02  1     1026 1.000E+00 molec/cm2/s
+SO4      SO4 tracer                     9.600E-02  1     1027 1.000E+00 molec/cm2/s
+SO4s     SO4s tracer                    9.600E-02  1     1028 1.000E+00 molec/cm2/s
+MSA      MSA tracer                     9.600E-02  1     1029 1.000E+00 molec/cm2/s
+NH3      NH3 tracer                     1.700E-02  1     1030 1.000E+00 molec/cm2/s
+NH4      NH4 tracer                     1.800E-02  1     1031 1.000E+00 molec/cm2/s
+NIT      NIT tracer                     6.200E-02  1     1032 1.000E+00 molec/cm2/s
+NITs     NITs tracer                    6.200E-02  1     1033 1.000E+00 molec/cm2/s
+BCPI     BCPI tracer                    1.200E-02  1     1034 1.000E+00 molec/cm2/s
+OCPI     OCPI tracer                    1.200E-02  1     1035 1.000E+00 molec/cm2/s
+BCPO     BCPO tracer                    1.200E-02  1     1036 1.000E+00 molec/cm2/s
+OCPO     OCPO tracer                    1.200E-02  1     1037 1.000E+00 molec/cm2/s
+DST1     DST1 tracer                    2.900E-02  1     1038 1.000E+00 molec/cm2/s
+DST2     DST2 tracer                    2.900E-02  1     1039 1.000E+00 molec/cm2/s
+DST3     DST3 tracer                    2.900E-02  1     1040 1.000E+00 molec/cm2/s
+DST4     DST4 tracer                    2.900E-02  1     1041 1.000E+00 molec/cm2/s
+SALA     SALA tracer                    3.140E-02  1     1042 1.000E+00 molec/cm2/s
+SALC     SALC tracer                    3.140E-02  1     1043 1.000E+00 molec/cm2/s
+Br2      Br2 tracer                     1.600E-01  1     1044 1.000E+00 molec/cm2/s
+Br       Br tracer                      8.000E-02  1     1045 1.000E+00 molec/cm2/s
+BrO      BrO tracer                     9.600E-02  1     1046 1.000E+00 molec/cm2/s
+HOBr     HOBr tracer                    9.700E-02  1     1047 1.000E+00 molec/cm2/s
+HBr      HBr tracer                     8.100E-02  1     1048 1.000E+00 molec/cm2/s
+BrNO2    BrNO2 tracer                   1.260E-01  1     1049 1.000E+00 molec/cm2/s
+BrNO3    BrNO3 tracer                   1.420E-01  1     1050 1.000E+00 molec/cm2/s
+CHBr3    CHBr3 tracer                   2.530E-01  1     1051 1.000E+00 molec/cm2/s
+CH2Br2   CH2Br2 tracer                  1.740E-01  1     1052 1.000E+00 molec/cm2/s
+CH3Br    CH3Br tracer                   9.500E-02  1     1053 1.000E+00 molec/cm2/s
+MPN      MPN tracer                     9.300E-02  1     1054 1.000E+00 molec/cm2/s
+ISOPN    ISOPN tracer                   1.470E-01  1     1055 1.000E+00 molec/cm2/s
+MOBA     MOBA tracer                    1.140E-01  1     1056 1.000E+00 molec/cm2/s
+PROPNN   PROPNN tracer                  1.190E-01  1     1057 1.000E+00 molec/cm2/s
+HAC      HAC tracer                     7.400E-02  1     1058 1.000E+00 molec/cm2/s
+GLYC     GLYC tracer                    6.000E-02  1     1059 1.000E+00 molec/cm2/s
+MMN      MMN tracer                     1.490E-01  1     1060 1.000E+00 molec/cm2/s
+RIP      RIP tracer                     1.180E-01  1     1061 1.000E+00 molec/cm2/s
+IEPOX    IEPOX tracer                   1.180E-01  1     1062 1.000E+00 molec/cm2/s
+MAP      MAP tracer                     7.600E-02  1     1063 1.000E+00 molec/cm2/s
+NO2      NO2 tracer                     4.600E-02  1     1064 1.000E+00 molec/cm2/s
+NO3      NO3 tracer                     6.200E-02  1     1065 1.000E+00 molec/cm2/s
+HNO2     HNO2 tracer                    4.700E-02  1     1066 1.000E+00 molec/cm2/s
+N2O      N2O tracer                     4.400E-02  1     1067 1.000E+00 molec/cm2/s
+OCS      OCS tracer                     6.000E-02  1     1068 1.000E+00 molec/cm2/s
+CH4      CH4 tracer                     1.600E-02  1     1069 1.000E+00 molec/cm2/s
+BrCl     BrCl tracer                    1.150E-01  1     1070 1.000E+00 molec/cm2/s
+HCl      HCl tracer                     3.600E-02  1     1071 1.000E+00 molec/cm2/s
+CCl4     CCl4 tracer                    1.520E-01  1     1072 1.000E+00 molec/cm2/s
+CH3Cl    CH3Cl tracer                   5.000E-02  1     1073 1.000E+00 molec/cm2/s
+CH3CCl3  CH3CCl3 tracer                 1.330E-01  1     1074 1.000E+00 molec/cm2/s
+CFCX     CFCX tracer                    1.870E-01  1     1075 1.000E+00 molec/cm2/s
+HCFCX    HCFCX tracer                   1.170E-01  1     1076 1.000E+00 molec/cm2/s
+CFC11    CFC11 tracer                   1.370E-01  1     1077 1.000E+00 molec/cm2/s
+CFC12    CFC12 tracer                   1.210E-01  1     1078 1.000E+00 molec/cm2/s
+HCFC22   HCFC22 tracer                  8.600E-02  1     1079 1.000E+00 molec/cm2/s
+H1211    H1211 tracer                   1.650E-01  1     1080 1.000E+00 molec/cm2/s
+H1301    H1301 tracer                   1.490E-01  1     1081 1.000E+00 molec/cm2/s
+H2402    H2402 tracer                   2.600E-01  1     1082 1.000E+00 molec/cm2/s
+Cl       Cl tracer                      3.500E-02  1     1083 1.000E+00 molec/cm2/s
+ClO      ClO tracer                     5.100E-02  1     1084 1.000E+00 molec/cm2/s
+HOCl     HOCl tracer                    5.200E-02  1     1085 1.000E+00 molec/cm2/s
+ClNO3    ClNO3 tracer                   9.700E-02  1     1086 1.000E+00 molec/cm2/s
+ClNO2    ClNO2 tracer                   8.100E-02  1     1087 1.000E+00 molec/cm2/s
+ClOO     ClOO tracer                    6.700E-02  1     1088 1.000E+00 molec/cm2/s
+OClO     OClO tracer                    6.700E-02  1     1089 1.000E+00 molec/cm2/s
+Cl2      Cl2 tracer                     7.100E-02  1     1090 1.000E+00 molec/cm2/s
+Cl2O2    Cl2O2 tracer                   1.030E-01  1     1091 1.000E+00 molec/cm2/s
+H2O      H2O tracer                     1.800E-02  1     1092 1.000E+00 molec/cm2/s
+SO4g     SO4g tracer                    9.600E-02  1     1093 1.000E+00 molec/cm2/s
+#==============================================================================
+# GEOS-CHEM tracers [molec/cm2]
+#==============================================================================
+NO       NO tracer                      3.000E-02  1     2001 1.000E+00 molec/cm2
+O3       O3 tracer                      4.800E-02  1     2002 1.000E+00 molec/cm2
+PAN      PAN tracer                     1.210E-01  1     2003 1.000E+00 molec/cm2
+CO       CO tracer                      2.800E-02  1     2004 1.000E+00 molec/cm2
+ALK4     ALK4 tracer                    1.200E-02  4     2005 1.000E+00 atoms C/cm2
+ISOP     ISOP tracer                    1.200E-02  5     2006 1.000E+00 atoms C/cm2
+HNO3     HNO3 tracer                    6.300E-02  1     2007 1.000E+00 molec/cm2
+H2O2     H2O2 tracer                    3.400E-02  1     2008 1.000E+00 molec/cm2
+ACET     ACET tracer                    1.200E-02  3     2009 1.000E+00 atoms C/cm2
+MEK      MEK tracer                     1.200E-02  4     2010 1.000E+00 atoms C/cm2
+ALD2     ALD2 tracer                    1.200E-02  2     2011 1.000E+00 atoms C/cm2
+RCHO     RCHO tracer                    5.800E-02  1     2012 1.000E+00 molec/cm2
+MVK      MVK tracer                     7.000E-02  1     2013 1.000E+00 molec/cm2
+MACR     MACR tracer                    7.000E-02  1     2014 1.000E+00 molec/cm2
+PMN      PMN tracer                     1.470E-01  1     2015 1.000E+00 molec/cm2
+PPN      PPN tracer                     1.350E-01  1     2016 1.000E+00 molec/cm2
+R4N2     R4N2 tracer                    1.190E-01  1     2017 1.000E+00 molec/cm2
+PRPE     PRPE tracer                    1.200E-02  3     2018 1.000E+00 atoms C/cm2
+C3H8     C3H8 tracer                    1.200E-02  3     2019 1.000E+00 atoms C/cm2
+CH2O     CH2O tracer                    3.000E-02  1     2020 1.000E+00 molec/cm2
+C2H6     C2H6 tracer                    1.200E-02  2     2021 1.000E+00 atoms C/cm2
+N2O5     N2O5 tracer                    1.050E-01  1     2022 1.000E+00 molec/cm2
+HNO4     HNO4 tracer                    7.900E-02  1     2023 1.000E+00 molec/cm2
+MP       MP tracer                      4.800E-02  1     2024 1.000E+00 molec/cm2
+DMS      DMS tracer                     6.200E-02  1     2025 1.000E+00 molec/cm2
+SO2      SO2 tracer                     6.400E-02  1     2026 1.000E+00 molec/cm2
+SO4      SO4 tracer                     9.600E-02  1     2027 1.000E+00 molec/cm2
+SO4s     SO4s tracer                    9.600E-02  1     2028 1.000E+00 molec/cm2
+MSA      MSA tracer                     9.600E-02  1     2029 1.000E+00 molec/cm2
+NH3      NH3 tracer                     1.700E-02  1     2030 1.000E+00 molec/cm2
+NH4      NH4 tracer                     1.800E-02  1     2031 1.000E+00 molec/cm2
+NIT      NIT tracer                     6.200E-02  1     2032 1.000E+00 molec/cm2
+NITs     NITs tracer                    6.200E-02  1     2033 1.000E+00 molec/cm2
+BCPI     BCPI tracer                    1.200E-02  1     2034 1.000E+00 molec/cm2
+OCPI     OCPI tracer                    1.200E-02  1     2035 1.000E+00 molec/cm2
+BCPO     BCPO tracer                    1.200E-02  1     2036 1.000E+00 molec/cm2
+OCPO     OCPO tracer                    1.200E-02  1     2037 1.000E+00 molec/cm2
+DST1     DST1 tracer                    2.900E-02  1     2038 1.000E+00 molec/cm2
+DST2     DST2 tracer                    2.900E-02  1     2039 1.000E+00 molec/cm2
+DST3     DST3 tracer                    2.900E-02  1     2040 1.000E+00 molec/cm2
+DST4     DST4 tracer                    2.900E-02  1     2041 1.000E+00 molec/cm2
+SALA     SALA tracer                    3.140E-02  1     2042 1.000E+00 molec/cm2
+SALC     SALC tracer                    3.140E-02  1     2043 1.000E+00 molec/cm2
+Br2      Br2 tracer                     1.600E-01  1     2044 1.000E+00 molec/cm2
+Br       Br tracer                      8.000E-02  1     2045 1.000E+00 molec/cm2
+BrO      BrO tracer                     9.600E-02  1     2046 1.000E+00 molec/cm2
+HOBr     HOBr tracer                    9.700E-02  1     2047 1.000E+00 molec/cm2
+HBr      HBr tracer                     8.100E-02  1     2048 1.000E+00 molec/cm2
+BrNO2    BrNO2 tracer                   1.260E-01  1     2049 1.000E+00 molec/cm2
+BrNO3    BrNO3 tracer                   1.420E-01  1     2050 1.000E+00 molec/cm2
+CHBr3    CHBr3 tracer                   2.530E-01  1     2051 1.000E+00 molec/cm2
+CH2Br2   CH2Br2 tracer                  1.740E-01  1     2052 1.000E+00 molec/cm2
+CH3Br    CH3Br tracer                   9.500E-02  1     2053 1.000E+00 molec/cm2
+MPN      MPN tracer                     9.300E-02  1     2054 1.000E+00 molec/cm2
+ISOPN    ISOPN tracer                   1.470E-01  1     2055 1.000E+00 molec/cm2
+MOBA     MOBA tracer                    1.140E-01  1     2056 1.000E+00 molec/cm2
+PROPNN   PROPNN tracer                  1.190E-01  1     2057 1.000E+00 molec/cm2
+HAC      HAC tracer                     7.400E-02  1     2058 1.000E+00 molec/cm2
+GLYC     GLYC tracer                    6.000E-02  1     2059 1.000E+00 molec/cm2
+MMN      MMN tracer                     1.490E-01  1     2060 1.000E+00 molec/cm2
+RIP      RIP tracer                     1.180E-01  1     2061 1.000E+00 molec/cm2
+IEPOX    IEPOX tracer                   1.180E-01  1     2062 1.000E+00 molec/cm2
+MAP      MAP tracer                     7.600E-02  1     2063 1.000E+00 molec/cm2
+NO2      NO2 tracer                     4.600E-02  1     2064 1.000E+00 molec/cm2
+NO3      NO3 tracer                     6.200E-02  1     2065 1.000E+00 molec/cm2
+HNO2     HNO2 tracer                    4.700E-02  1     2066 1.000E+00 molec/cm2
+N2O      N2O tracer                     4.400E-02  1     2067 1.000E+00 molec/cm2
+OCS      OCS tracer                     6.000E-02  1     2068 1.000E+00 molec/cm2
+CH4      CH4 tracer                     1.600E-02  1     2069 1.000E+00 molec/cm2
+BrCl     BrCl tracer                    1.150E-01  1     2070 1.000E+00 molec/cm2
+HCl      HCl tracer                     3.600E-02  1     2071 1.000E+00 molec/cm2
+CCl4     CCl4 tracer                    1.520E-01  1     2072 1.000E+00 molec/cm2
+CH3Cl    CH3Cl tracer                   5.000E-02  1     2073 1.000E+00 molec/cm2
+CH3CCl3  CH3CCl3 tracer                 1.330E-01  1     2074 1.000E+00 molec/cm2
+CFCX     CFCX tracer                    1.870E-01  1     2075 1.000E+00 molec/cm2
+HCFCX    HCFCX tracer                   1.170E-01  1     2076 1.000E+00 molec/cm2
+CFC11    CFC11 tracer                   1.370E-01  1     2077 1.000E+00 molec/cm2
+CFC12    CFC12 tracer                   1.210E-01  1     2078 1.000E+00 molec/cm2
+HCFC22   HCFC22 tracer                  8.600E-02  1     2079 1.000E+00 molec/cm2
+H1211    H1211 tracer                   1.650E-01  1     2080 1.000E+00 molec/cm2
+H1301    H1301 tracer                   1.490E-01  1     2081 1.000E+00 molec/cm2
+H2402    H2402 tracer                   2.600E-01  1     2082 1.000E+00 molec/cm2
+Cl       Cl tracer                      3.500E-02  1     2083 1.000E+00 molec/cm2
+ClO      ClO tracer                     5.100E-02  1     2084 1.000E+00 molec/cm2
+HOCl     HOCl tracer                    5.200E-02  1     2085 1.000E+00 molec/cm2
+ClNO3    ClNO3 tracer                   9.700E-02  1     2086 1.000E+00 molec/cm2
+ClNO2    ClNO2 tracer                   8.100E-02  1     2087 1.000E+00 molec/cm2
+ClOO     ClOO tracer                    6.700E-02  1     2088 1.000E+00 molec/cm2
+OClO     OClO tracer                    6.700E-02  1     2089 1.000E+00 molec/cm2
+Cl2      Cl2 tracer                     7.100E-02  1     2090 1.000E+00 molec/cm2
+Cl2O2    Cl2O2 tracer                   1.030E-01  1     2091 1.000E+00 molec/cm2
+H2O      H2O tracer                     1.800E-02  1     2092 1.000E+00 molec/cm2
+SO4g     SO4g tracer                    9.600E-02  1     2093 1.000E+00 molec/cm2
+#==============================================================================
+# GEOS-CHEM tracers [kg/s]
+#==============================================================================
+NO       NO tracer                      3.000E-02  1     3001 1.000E+00 kg/s
+O3       O3 tracer                      4.800E-02  1     3002 1.000E+00 kg/s
+PAN      PAN tracer                     1.210E-01  1     3003 1.000E+00 kg/s
+CO       CO tracer                      2.800E-02  1     3004 1.000E+00 kg/s
+ALK4     ALK4 tracer                    1.200E-02  4     3005 1.000E+00 kg C/s
+ISOP     ISOP tracer                    1.200E-02  5     3006 1.000E+00 kg C/s
+HNO3     HNO3 tracer                    6.300E-02  1     3007 1.000E+00 kg/s
+H2O2     H2O2 tracer                    3.400E-02  1     3008 1.000E+00 kg/s
+ACET     ACET tracer                    1.200E-02  3     3009 1.000E+00 kg C/s
+MEK      MEK tracer                     1.200E-02  4     3010 1.000E+00 kg C/s
+ALD2     ALD2 tracer                    1.200E-02  2     3011 1.000E+00 kg C/s
+RCHO     RCHO tracer                    5.800E-02  1     3012 1.000E+00 kg/s
+MVK      MVK tracer                     7.000E-02  1     3013 1.000E+00 kg/s
+MACR     MACR tracer                    7.000E-02  1     3014 1.000E+00 kg/s
+PMN      PMN tracer                     1.470E-01  1     3015 1.000E+00 kg/s
+PPN      PPN tracer                     1.350E-01  1     3016 1.000E+00 kg/s
+R4N2     R4N2 tracer                    1.190E-01  1     3017 1.000E+00 kg/s
+PRPE     PRPE tracer                    1.200E-02  3     3018 1.000E+00 kg C/s
+C3H8     C3H8 tracer                    1.200E-02  3     3019 1.000E+00 kg C/s
+CH2O     CH2O tracer                    3.000E-02  1     3020 1.000E+00 kg/s
+C2H6     C2H6 tracer                    1.200E-02  2     3021 1.000E+00 kg C/s
+N2O5     N2O5 tracer                    1.050E-01  1     3022 1.000E+00 kg/s
+HNO4     HNO4 tracer                    7.900E-02  1     3023 1.000E+00 kg/s
+MP       MP tracer                      4.800E-02  1     3024 1.000E+00 kg/s
+DMS      DMS tracer                     6.200E-02  1     3025 1.000E+00 kg/s
+SO2      SO2 tracer                     6.400E-02  1     3026 1.000E+00 kg/s
+SO4      SO4 tracer                     9.600E-02  1     3027 1.000E+00 kg/s
+SO4s     SO4s tracer                    9.600E-02  1     3028 1.000E+00 kg/s
+MSA      MSA tracer                     9.600E-02  1     3029 1.000E+00 kg/s
+NH3      NH3 tracer                     1.700E-02  1     3030 1.000E+00 kg/s
+NH4      NH4 tracer                     1.800E-02  1     3031 1.000E+00 kg/s
+NIT      NIT tracer                     6.200E-02  1     3032 1.000E+00 kg/s
+NITs     NITs tracer                    6.200E-02  1     3033 1.000E+00 kg/s
+BCPI     BCPI tracer                    1.200E-02  1     3034 1.000E+00 kg/s
+OCPI     OCPI tracer                    1.200E-02  1     3035 1.000E+00 kg/s
+BCPO     BCPO tracer                    1.200E-02  1     3036 1.000E+00 kg/s
+OCPO     OCPO tracer                    1.200E-02  1     3037 1.000E+00 kg/s
+DST1     DST1 tracer                    2.900E-02  1     3038 1.000E+00 kg/s
+DST2     DST2 tracer                    2.900E-02  1     3039 1.000E+00 kg/s
+DST3     DST3 tracer                    2.900E-02  1     3040 1.000E+00 kg/s
+DST4     DST4 tracer                    2.900E-02  1     3041 1.000E+00 kg/s
+SALA     SALA tracer                    3.140E-02  1     3042 1.000E+00 kg/s
+SALC     SALC tracer                    3.140E-02  1     3043 1.000E+00 kg/s
+Br2      Br2 tracer                     1.600E-01  1     3044 1.000E+00 kg/s
+Br       Br tracer                      8.000E-02  1     3045 1.000E+00 kg/s
+BrO      BrO tracer                     9.600E-02  1     3046 1.000E+00 kg/s
+HOBr     HOBr tracer                    9.700E-02  1     3047 1.000E+00 kg/s
+HBr      HBr tracer                     8.100E-02  1     3048 1.000E+00 kg/s
+BrNO2    BrNO2 tracer                   1.260E-01  1     3049 1.000E+00 kg/s
+BrNO3    BrNO3 tracer                   1.420E-01  1     3050 1.000E+00 kg/s
+CHBr3    CHBr3 tracer                   2.530E-01  1     3051 1.000E+00 kg/s
+CH2Br2   CH2Br2 tracer                  1.740E-01  1     3052 1.000E+00 kg/s
+CH3Br    CH3Br tracer                   9.500E-02  1     3053 1.000E+00 kg/s
+MPN      MPN tracer                     9.300E-02  1     3054 1.000E+00 kg/s
+ISOPN    ISOPN tracer                   1.470E-01  1     3055 1.000E+00 kg/s
+MOBA     MOBA tracer                    1.140E-01  1     3056 1.000E+00 kg/s
+PROPNN   PROPNN tracer                  1.190E-01  1     3057 1.000E+00 kg/s
+HAC      HAC tracer                     7.400E-02  1     3058 1.000E+00 kg/s
+GLYC     GLYC tracer                    6.000E-02  1     3059 1.000E+00 kg/s
+MMN      MMN tracer                     1.490E-01  1     3060 1.000E+00 kg/s
+RIP      RIP tracer                     1.180E-01  1     3061 1.000E+00 kg/s
+IEPOX    IEPOX tracer                   1.180E-01  1     3062 1.000E+00 kg/s
+MAP      MAP tracer                     7.600E-02  1     3063 1.000E+00 kg/s
+NO2      NO2 tracer                     4.600E-02  1     3064 1.000E+00 kg/s
+NO3      NO3 tracer                     6.200E-02  1     3065 1.000E+00 kg/s
+HNO2     HNO2 tracer                    4.700E-02  1     3066 1.000E+00 kg/s
+N2O      N2O tracer                     4.400E-02  1     3067 1.000E+00 kg/s
+OCS      OCS tracer                     6.000E-02  1     3068 1.000E+00 kg/s
+CH4      CH4 tracer                     1.600E-02  1     3069 1.000E+00 kg/s
+BrCl     BrCl tracer                    1.150E-01  1     3070 1.000E+00 kg/s
+HCl      HCl tracer                     3.600E-02  1     3071 1.000E+00 kg/s
+CCl4     CCl4 tracer                    1.520E-01  1     3072 1.000E+00 kg/s
+CH3Cl    CH3Cl tracer                   5.000E-02  1     3073 1.000E+00 kg/s
+CH3CCl3  CH3CCl3 tracer                 1.330E-01  1     3074 1.000E+00 kg/s
+CFCX     CFCX tracer                    1.870E-01  1     3075 1.000E+00 kg/s
+HCFCX    HCFCX tracer                   1.170E-01  1     3076 1.000E+00 kg/s
+CFC11    CFC11 tracer                   1.370E-01  1     3077 1.000E+00 kg/s
+CFC12    CFC12 tracer                   1.210E-01  1     3078 1.000E+00 kg/s
+HCFC22   HCFC22 tracer                  8.600E-02  1     3079 1.000E+00 kg/s
+H1211    H1211 tracer                   1.650E-01  1     3080 1.000E+00 kg/s
+H1301    H1301 tracer                   1.490E-01  1     3081 1.000E+00 kg/s
+H2402    H2402 tracer                   2.600E-01  1     3082 1.000E+00 kg/s
+Cl       Cl tracer                      3.500E-02  1     3083 1.000E+00 kg/s
+ClO      ClO tracer                     5.100E-02  1     3084 1.000E+00 kg/s
+HOCl     HOCl tracer                    5.200E-02  1     3085 1.000E+00 kg/s
+ClNO3    ClNO3 tracer                   9.700E-02  1     3086 1.000E+00 kg/s
+ClNO2    ClNO2 tracer                   8.100E-02  1     3087 1.000E+00 kg/s
+ClOO     ClOO tracer                    6.700E-02  1     3088 1.000E+00 kg/s
+OClO     OClO tracer                    6.700E-02  1     3089 1.000E+00 kg/s
+Cl2      Cl2 tracer                     7.100E-02  1     3090 1.000E+00 kg/s
+Cl2O2    Cl2O2 tracer                   1.030E-01  1     3091 1.000E+00 kg/s
+H2O      H2O tracer                     1.800E-02  1     3092 1.000E+00 kg/s
+SO4g     SO4g tracer                    9.600E-02  1     3093 1.000E+00 kg/s
+#==============================================================================
+# GEOS-CHEM tracers [kg]
+#==============================================================================
+NO       NO tracer                      3.000E-02  1     4001 1.000E+00 kg
+O3       O3 tracer                      4.800E-02  1     4002 1.000E+00 kg
+PAN      PAN tracer                     1.210E-01  1     4003 1.000E+00 kg
+CO       CO tracer                      2.800E-02  1     4004 1.000E+00 kg
+ALK4     ALK4 tracer                    1.200E-02  4     4005 1.000E+00 kg C
+ISOP     ISOP tracer                    1.200E-02  5     4006 1.000E+00 kg C
+HNO3     HNO3 tracer                    6.300E-02  1     4007 1.000E+00 kg
+H2O2     H2O2 tracer                    3.400E-02  1     4008 1.000E+00 kg
+ACET     ACET tracer                    1.200E-02  3     4009 1.000E+00 kg C
+MEK      MEK tracer                     1.200E-02  4     4010 1.000E+00 kg C
+ALD2     ALD2 tracer                    1.200E-02  2     4011 1.000E+00 kg C
+RCHO     RCHO tracer                    5.800E-02  1     4012 1.000E+00 kg
+MVK      MVK tracer                     7.000E-02  1     4013 1.000E+00 kg
+MACR     MACR tracer                    7.000E-02  1     4014 1.000E+00 kg
+PMN      PMN tracer                     1.470E-01  1     4015 1.000E+00 kg
+PPN      PPN tracer                     1.350E-01  1     4016 1.000E+00 kg
+R4N2     R4N2 tracer                    1.190E-01  1     4017 1.000E+00 kg
+PRPE     PRPE tracer                    1.200E-02  3     4018 1.000E+00 kg C
+C3H8     C3H8 tracer                    1.200E-02  3     4019 1.000E+00 kg C
+CH2O     CH2O tracer                    3.000E-02  1     4020 1.000E+00 kg
+C2H6     C2H6 tracer                    1.200E-02  2     4021 1.000E+00 kg C
+N2O5     N2O5 tracer                    1.050E-01  1     4022 1.000E+00 kg
+HNO4     HNO4 tracer                    7.900E-02  1     4023 1.000E+00 kg
+MP       MP tracer                      4.800E-02  1     4024 1.000E+00 kg
+DMS      DMS tracer                     6.200E-02  1     4025 1.000E+00 kg
+SO2      SO2 tracer                     6.400E-02  1     4026 1.000E+00 kg
+SO4      SO4 tracer                     9.600E-02  1     4027 1.000E+00 kg
+SO4s     SO4s tracer                    9.600E-02  1     4028 1.000E+00 kg
+MSA      MSA tracer                     9.600E-02  1     4029 1.000E+00 kg
+NH3      NH3 tracer                     1.700E-02  1     4030 1.000E+00 kg
+NH4      NH4 tracer                     1.800E-02  1     4031 1.000E+00 kg
+NIT      NIT tracer                     6.200E-02  1     4032 1.000E+00 kg
+NITs     NITs tracer                    6.200E-02  1     4033 1.000E+00 kg
+BCPI     BCPI tracer                    1.200E-02  1     4034 1.000E+00 kg
+OCPI     OCPI tracer                    1.200E-02  1     4035 1.000E+00 kg
+BCPO     BCPO tracer                    1.200E-02  1     4036 1.000E+00 kg
+OCPO     OCPO tracer                    1.200E-02  1     4037 1.000E+00 kg
+DST1     DST1 tracer                    2.900E-02  1     4038 1.000E+00 kg
+DST2     DST2 tracer                    2.900E-02  1     4039 1.000E+00 kg
+DST3     DST3 tracer                    2.900E-02  1     4040 1.000E+00 kg
+DST4     DST4 tracer                    2.900E-02  1     4041 1.000E+00 kg
+SALA     SALA tracer                    3.140E-02  1     4042 1.000E+00 kg
+SALC     SALC tracer                    3.140E-02  1     4043 1.000E+00 kg
+Br2      Br2 tracer                     1.600E-01  1     4044 1.000E+00 kg
+Br       Br tracer                      8.000E-02  1     4045 1.000E+00 kg
+BrO      BrO tracer                     9.600E-02  1     4046 1.000E+00 kg
+HOBr     HOBr tracer                    9.700E-02  1     4047 1.000E+00 kg
+HBr      HBr tracer                     8.100E-02  1     4048 1.000E+00 kg
+BrNO2    BrNO2 tracer                   1.260E-01  1     4049 1.000E+00 kg
+BrNO3    BrNO3 tracer                   1.420E-01  1     4050 1.000E+00 kg
+CHBr3    CHBr3 tracer                   2.530E-01  1     4051 1.000E+00 kg
+CH2Br2   CH2Br2 tracer                  1.740E-01  1     4052 1.000E+00 kg
+CH3Br    CH3Br tracer                   9.500E-02  1     4053 1.000E+00 kg
+MPN      MPN tracer                     9.300E-02  1     4054 1.000E+00 kg
+ISOPN    ISOPN tracer                   1.470E-01  1     4055 1.000E+00 kg
+MOBA     MOBA tracer                    1.140E-01  1     4056 1.000E+00 kg
+PROPNN   PROPNN tracer                  1.190E-01  1     4057 1.000E+00 kg
+HAC      HAC tracer                     7.400E-02  1     4058 1.000E+00 kg
+GLYC     GLYC tracer                    6.000E-02  1     4059 1.000E+00 kg
+MMN      MMN tracer                     1.490E-01  1     4060 1.000E+00 kg
+RIP      RIP tracer                     1.180E-01  1     4061 1.000E+00 kg
+IEPOX    IEPOX tracer                   1.180E-01  1     4062 1.000E+00 kg
+MAP      MAP tracer                     7.600E-02  1     4063 1.000E+00 kg
+NO2      NO2 tracer                     4.600E-02  1     4064 1.000E+00 kg
+NO3      NO3 tracer                     6.200E-02  1     4065 1.000E+00 kg
+HNO2     HNO2 tracer                    4.700E-02  1     4066 1.000E+00 kg
+N2O      N2O tracer                     4.400E-02  1     4067 1.000E+00 kg
+OCS      OCS tracer                     6.000E-02  1     4068 1.000E+00 kg
+CH4      CH4 tracer                     1.600E-02  1     4069 1.000E+00 kg
+BrCl     BrCl tracer                    1.150E-01  1     4070 1.000E+00 kg
+HCl      HCl tracer                     3.600E-02  1     4071 1.000E+00 kg
+CCl4     CCl4 tracer                    1.520E-01  1     4072 1.000E+00 kg
+CH3Cl    CH3Cl tracer                   5.000E-02  1     4073 1.000E+00 kg
+CH3CCl3  CH3CCl3 tracer                 1.330E-01  1     4074 1.000E+00 kg
+CFCX     CFCX tracer                    1.870E-01  1     4075 1.000E+00 kg
+HCFCX    HCFCX tracer                   1.170E-01  1     4076 1.000E+00 kg
+CFC11    CFC11 tracer                   1.370E-01  1     4077 1.000E+00 kg
+CFC12    CFC12 tracer                   1.210E-01  1     4078 1.000E+00 kg
+HCFC22   HCFC22 tracer                  8.600E-02  1     4079 1.000E+00 kg
+H1211    H1211 tracer                   1.650E-01  1     4080 1.000E+00 kg
+H1301    H1301 tracer                   1.490E-01  1     4081 1.000E+00 kg
+H2402    H2402 tracer                   2.600E-01  1     4082 1.000E+00 kg
+Cl       Cl tracer                      3.500E-02  1     4083 1.000E+00 kg
+ClO      ClO tracer                     5.100E-02  1     4084 1.000E+00 kg
+HOCl     HOCl tracer                    5.200E-02  1     4085 1.000E+00 kg
+ClNO3    ClNO3 tracer                   9.700E-02  1     4086 1.000E+00 kg
+ClNO2    ClNO2 tracer                   8.100E-02  1     4087 1.000E+00 kg
+ClOO     ClOO tracer                    6.700E-02  1     4088 1.000E+00 kg
+OClO     OClO tracer                    6.700E-02  1     4089 1.000E+00 kg
+Cl2      Cl2 tracer                     7.100E-02  1     4090 1.000E+00 kg
+Cl2O2    Cl2O2 tracer                   1.030E-01  1     4091 1.000E+00 kg
+H2O      H2O tracer                     1.800E-02  1     4092 1.000E+00 kg
+SO4g     SO4g tracer                    9.600E-02  1     4093 1.000E+00 kg
+#==============================================================================
+# Quantities for Soil NOx restart file
+#==============================================================================
+P_DRY    Dry period                     1.000E+00  1    60001 1.000E+00 hours
+PFACTOR  Pulsing factor                 1.000E+00  1    60002 1.000E+00 unitless
+GWET_PRV Soil moisture                  1.000E+00  1    60003 1.000E+00 unitless
+N_RESVR  N reservoir                    1.000E+00  1    60004 1.000E+00 ng N/m2
+#==============================================================================
+# Quantities for Soil NOx restart file
+#==============================================================================
+STATEPSC Instantaneous PSC state        1.000E+00  1    55001 1.000E+00 unitless
+#==============================================================================
+# ND21 diagnostic quantities
+#==============================================================================
+OPTD     Cloud optical depth            0.000E+00  1    14001 1.000E+00 unitless
+CLDTOT   3-D cloud frc                  0.000E+00  1    14002 1.000E+00 unitless
+                                        0.000E+00  1    14003 1.000E+00 unitless
+OPD      Mineral dust opt depth         0.000E+00  1    14004 1.000E+00 unitless
+SD       Mineral dust surface area      0.000E+00  1    14005 1.000E+00 cm2/cm3
+OPSO4550 Sulfate opt depth (550  nm)    0.000E+00  1    14006 1.000E+00 unitless
+HGSO4    Hygr growth of SO4             0.000E+00  1    14007 1.000E+00 unitless
+SSO4     Sulfate surface area           0.000E+00  1    14008 1.000E+00 cm2/cm3
+OPBC550  Black carbon opt depth (550  n 0.000E+00  1    14009 1.000E+00 unitless
+HGBC     Hygr growth of BC              0.000E+00  1    14010 1.000E+00 unitless
+SBC      BC surface area                0.000E+00  1    14011 1.000E+00 cm2/cm3
+OPOC550  Org carbon opt depth (550  nm) 0.000E+00  1    14012 1.000E+00 unitless
+HGOC     Hygr growth of OC              0.000E+00  1    14013 1.000E+00 unitless
+SOC      OC surface area                0.000E+00  1    14014 1.000E+00 cm2/cm3
+OPSSa550 Seasalt (accum) opt depth (550 0.000E+00  1    14015 1.000E+00 unitless
+HGSSa    Hygr growth of seasalt (accum) 0.000E+00  1    14016 1.000E+00 unitless
+SSSa     Seasalt (accum) surface area   0.000E+00  1    14017 1.000E+00 cm2/cm3
+OPSSc550 Seasalt (coarse) opt depth (55 0.000E+00  1    14018 1.000E+00 unitless
+HGSSc    Hygr growth of seasalt (coarse 0.000E+00  1    14019 1.000E+00 unitless
+SSSc     Seasalt (coarse) surface area  0.000E+00  1    14020 1.000E+00 cm2/cm3
+OPD1550  Dust bin 1 AOD (550  nm)       0.000E+00  1    14021 1.000E+00 unitless
+OPD2550  Dust bin 2 AOD (550  nm)       0.000E+00  1    14022 1.000E+00 unitless
+OPD3550  Dust bin 3 AOD (550  nm)       0.000E+00  1    14023 1.000E+00 unitless
+OPD4550  Dust bin 4 AOD (550  nm)       0.000E+00  1    14024 1.000E+00 unitless
+OPD5550  Dust bin 5 AOD (550  nm)       0.000E+00  1    14025 1.000E+00 unitless
+OPD6550  Dust bin 6 AOD (550  nm)       0.000E+00  1    14026 1.000E+00 unitless
+OPD7550  Dust bin 7 AOD (550  nm)       0.000E+00  1    14027 1.000E+00 unitless
+OPSO4    Seasalt (accum) opt depth (    0.000E+00  1    14028 1.000E+00 unitless
+OPBC     BC opt depth (     nm)         0.000E+00  1    14029 1.000E+00 unitless
+OPOC     OC opt depth (     nm)         0.000E+00  1    14030 1.000E+00 unitless
+OPSSa    Seasalt (accum) opt depth (    0.000E+00  1    14031 1.000E+00 unitless
+OPSSc    seasalt (coarse) opt depth (   0.000E+00  1    14032 1.000E+00 unitless
+OPD1     Dust bin 1 AOD (     nm)       0.000E+00  1    14033 1.000E+00 unitless
+OPD2     Dust bin 2 AOD (     nm)       0.000E+00  1    14034 1.000E+00 unitless
+OPD3     Dust bin 3 AOD (     nm)       0.000E+00  1    14035 1.000E+00 unitless
+OPD4     Dust bin 4 AOD (     nm)       0.000E+00  1    14036 1.000E+00 unitless
+OPD5     Dust bin 5 AOD (     nm)       0.000E+00  1    14037 1.000E+00 unitless
+OPD6     Dust bin 6 AOD (     nm)       0.000E+00  1    14038 1.000E+00 unitless
+OPD7     Dust bin 7 AOD (     nm)       0.000E+00  1    14039 1.000E+00 unitless
+OPSO4    Seasalt (accum) opt depth (    0.000E+00  1    14040 1.000E+00 unitless
+OPBC     BC opt depth (     nm)         0.000E+00  1    14041 1.000E+00 unitless
+OPOC     OC opt depth (     nm)         0.000E+00  1    14042 1.000E+00 unitless
+OPSSa    Seasalt (accum) opt depth (    0.000E+00  1    14043 1.000E+00 unitless
+OPSSc    seasalt (coarse) opt depth (   0.000E+00  1    14044 1.000E+00 unitless
+OPD1     Dust bin 1 AOD (     nm)       0.000E+00  1    14045 1.000E+00 unitless
+OPD2     Dust bin 2 AOD (     nm)       0.000E+00  1    14046 1.000E+00 unitless
+OPD3     Dust bin 3 AOD (     nm)       0.000E+00  1    14047 1.000E+00 unitless
+OPD4     Dust bin 4 AOD (     nm)       0.000E+00  1    14048 1.000E+00 unitless
+OPD5     Dust bin 5 AOD (     nm)       0.000E+00  1    14049 1.000E+00 unitless
+OPD6     Dust bin 6 AOD (     nm)       0.000E+00  1    14050 1.000E+00 unitless
+OPD7     Dust bin 7 AOD (     nm)       0.000E+00  1    14051 1.000E+00 unitless
+ODSLA    SLA AOD (600 nm)               0.000E+00  1    14052 1.000E+00 unitless
+SASLA    SLA surface area               0.000E+00  1    14053 1.000E+00 cm2/cm3
+NDSLA    SLA number density             0.000E+00  1    14054 1.000E+00 num/cm3
+ODSPA    PSC type 1a/2 AOD (600 nm)     0.000E+00  1    14055 1.000E+00 unitless
+SASPA    PSC type 1a/2 surface area     0.000E+00  1    14056 1.000E+00 cm2/cm3
+NDSPA    SPA number density             0.000E+00  1    14057 1.000E+00 num/cm3
+#==============================================================================
+# ND22 diagnostic quantities
+#==============================================================================
+JNO2     JNO2 photolysis rate           0.000E+00  1    13001 1.000E+00 s-1
+JHNO3    JHNO3 photolysis rate          0.000E+00  1    13002 1.000E+00 s-1
+JH2O2    JH2O2 photolysis rate          0.000E+00  1    13003 1.000E+00 s-1
+JCH2O    JCH2O photolysis rate          0.000E+00  1    13004 1.000E+00 s-1
+JO3_O1D  JO3_O1D photolysis rate        0.000E+00  1    13005 1.000E+00 s-1
+JO3_O3P  JO3_O3P photolysis rate        0.000E+00  1    13006 1.000E+00 s-1
+JGLYX    JGLYX photolysis rate          0.000E+00  1    13007 1.000E+00 s-1
+JMGLY    JMGLY photolysis rate          0.000E+00  1    13008 1.000E+00 s-1
+JBrO     JBrO photolysis rate           0.000E+00  1    13009 1.000E+00 s-1
+JHOBr    JHOBr photolysis rate          0.000E+00  1    13010 1.000E+00 s-1
+JBrNO2   JBrNO2 photolysis rate         0.000E+00  1    13011 1.000E+00 s-1
+JBrNO3   JBrNO3 photolysis rate         0.000E+00  1    13012 1.000E+00 s-1
+JCHBr3   JCHBr3 photolysis rate         0.000E+00  1    13013 1.000E+00 s-1
+JBr2     JBr2 photolysis rate           0.000E+00  1    13014 1.000E+00 s-1
+JO2      JO2 photolysis rate            0.000E+00  1    13015 1.000E+00 s-1
+JN2O     JN2O photolysis rate           0.000E+00  1    13016 1.000E+00 s-1
+JNO      JNO photolysis rate            0.000E+00  1    13017 1.000E+00 s-1
+JNO3     JNO3 photolysis rate           0.000E+00  1    13018 1.000E+00 s-1
+JCFC11   JCFC11 photolysis rate         0.000E+00  1    13019 1.000E+00 s-1
+JCFC12   JCFC12 photolysis rate         0.000E+00  1    13020 1.000E+00 s-1
+JCCl4    JCCl4 photolysis rate          0.000E+00  1    13021 1.000E+00 s-1
+JCH3Cl   JCH3Cl photolysis rate         0.000E+00  1    13022 1.000E+00 s-1
+JACET    JACET photolysis rate          0.000E+00  1    13023 1.000E+00 s-1
+JALD2    JALD2 photolysis rate          0.000E+00  1    13024 1.000E+00 s-1
+JMVK     JMVK photolysis rate           0.000E+00  1    13025 1.000E+00 s-1
+JMACR    JMACR photolysis rate          0.000E+00  1    13026 1.000E+00 s-1
+JHAC     JHAC photolysis rate           0.000E+00  1    13027 1.000E+00 s-1
+JGLYC    JGLYC photolysis rate          0.000E+00  1    13028 1.000E+00 s-1
+#==============================================================================
+# ND43 diagnostic quantities
+#==============================================================================
+OH       Chemically produced OH         1.700E-02  1    16001 1.000E+00 molec/cm3
+         Chemically produced            0.000E+00  1    16002 1.000E+00 
+HO2      Chemically produced HO2        3.300E-02  1    16003 1.000E+00 v/v
+O1D      Chemically produced O1D        1.600E-02  1    16004 1.000E+00 molec/cm3
+O        Chemically produced O          1.600E-02  1    16005 1.000E+00 molec/cm3
+LBRO2H   Chemically produced LBRO2H     1.270E-01  1    16006 1.000E+00 molec/cm3
+LBRO2N   Chemically produced LBRO2N     1.270E-01  1    16007 1.000E+00 molec/cm3
+LTRO2H   Chemically produced LTRO2H     1.410E-01  1    16008 1.000E+00 molec/cm3
+LTRO2N   Chemically produced LTRO2N     1.410E-01  1    16009 1.000E+00 molec/cm3
+LXRO2H   Chemically produced LXRO2H     1.550E-01  1    16010 1.000E+00 molec/cm3
+LXRO2N   Chemically produced LXRO2N     1.550E-01  1    16011 1.000E+00 molec/cm3
+#==============================================================================
+# ND68 diagnostic quantities
+#==============================================================================
+BXHEIGHT Grid box height                0.000E+00  1    24001 1.000E+00 m
+AD       Air mass in grid box           0.000E+00  1    24002 1.000E+00 kg
+AVGW     Mixing ratio of H2O vapor      0.000E+00  1    24003 1.000E+00 v/v
+N(AIR)   Number density of air          0.000E+00  1    24004 1.000E+00 molec/m3
+#==============================================================================
+# ND72 diagnostic quantities
+#==============================================================================
+FSWBATA  Clear TOA SW All-sky           0.000E+00  1    72001 1.000E+00 W/m2
+FSWO3TA  Ozone TOA SW All-sky           0.000E+00  1    72002 1.000E+00 W/m2
+FSWO3sTA Strat ozone TOA SW All-sky     0.000E+00  1    72003 1.000E+00 W/m2
+FSWO3tTA Trop ozone TOA SW All-sky      0.000E+00  1    72004 1.000E+00 W/m2
+FSWCH4TA Methane TOA SW All-sky         0.000E+00  1    72005 1.000E+00 W/m2
+FSWH2OTA Strat H2O TOA SW All-sky       0.000E+00  1    72006 1.000E+00 W/m2
+FSWCO2TA CO2 TOA SW All-sky             0.000E+00  1    72007 1.000E+00 W/m2
+FSWSUTA  Sulfate TOA SW All-sky         0.000E+00  1    72008 1.000E+00 W/m2
+FSWNITA  Nitrate TOA SW All-sky         0.000E+00  1    72009 1.000E+00 W/m2
+FSWAMTA  Ammon. TOA SW All-sky          0.000E+00  1    72010 1.000E+00 W/m2
+FSWBCTA  BC TOA SW All-sky              0.000E+00  1    72011 1.000E+00 W/m2
+FSWOATA  Organic TOA SW All-sky         0.000E+00  1    72012 1.000E+00 W/m2
+FSWSSTA  Sea salt TOA SW All-sky        0.000E+00  1    72013 1.000E+00 W/m2
+FSWDUTA  Dust TOA SW All-sky            0.000E+00  1    72014 1.000E+00 W/m2
+FSWPMTA  All aerosol TOA SW All-sky     0.000E+00  1    72015 1.000E+00 W/m2
+FSWCTTA  Contrails TOA SW All-sky       0.000E+00  1    72016 1.000E+00 W/m2
+FSWSTTA  Strat aer TOA SW All-sky       0.000E+00  1    72017 1.000E+00 W/m2
+FSWBASA  Clear Surface SW All-sky       0.000E+00  1    72018 1.000E+00 W/m2
+FSWO3SA  Ozone Surface SW All-sky       0.000E+00  1    72019 1.000E+00 W/m2
+FSWO3sSA Strat ozone Surface SW All-sky 0.000E+00  1    72020 1.000E+00 W/m2
+FSWO3tSA Trop ozone Surface SW All-sky  0.000E+00  1    72021 1.000E+00 W/m2
+FSWCH4SA Methane Surface SW All-sky     0.000E+00  1    72022 1.000E+00 W/m2
+FSWH2OSA Strat H2O Surface SW All-sky   0.000E+00  1    72023 1.000E+00 W/m2
+FSWCO2SA CO2 Surface SW All-sky         0.000E+00  1    72024 1.000E+00 W/m2
+FSWSUSA  Sulfate Surface SW All-sky     0.000E+00  1    72025 1.000E+00 W/m2
+FSWNISA  Nitrate Surface SW All-sky     0.000E+00  1    72026 1.000E+00 W/m2
+FSWAMSA  Ammon. Surface SW All-sky      0.000E+00  1    72027 1.000E+00 W/m2
+FSWBCSA  BC Surface SW All-sky          0.000E+00  1    72028 1.000E+00 W/m2
+FSWOASA  Organic Surface SW All-sky     0.000E+00  1    72029 1.000E+00 W/m2
+FSWSSSA  Sea salt Surface SW All-sky    0.000E+00  1    72030 1.000E+00 W/m2
+FSWDUSA  Dust Surface SW All-sky        0.000E+00  1    72031 1.000E+00 W/m2
+FSWPMSA  All aerosol Surface SW All-sky 0.000E+00  1    72032 1.000E+00 W/m2
+FSWCTSA  Contrails Surface SW All-sky   0.000E+00  1    72033 1.000E+00 W/m2
+FSWSTSA  Strat aer Surface SW All-sky   0.000E+00  1    72034 1.000E+00 W/m2
+FSWBAPA  Clear Trop SW All-sky          0.000E+00  1    72035 1.000E+00 W/m2
+FSWO3PA  Ozone Trop SW All-sky          0.000E+00  1    72036 1.000E+00 W/m2
+FSWO3sPA Strat ozone Trop SW All-sky    0.000E+00  1    72037 1.000E+00 W/m2
+FSWO3tPA Trop ozone Trop SW All-sky     0.000E+00  1    72038 1.000E+00 W/m2
+FSWCH4PA Methane Trop SW All-sky        0.000E+00  1    72039 1.000E+00 W/m2
+FSWH2OPA Strat H2O Trop SW All-sky      0.000E+00  1    72040 1.000E+00 W/m2
+FSWCO2PA CO2 Trop SW All-sky            0.000E+00  1    72041 1.000E+00 W/m2
+FSWSUPA  Sulfate Trop SW All-sky        0.000E+00  1    72042 1.000E+00 W/m2
+FSWNIPA  Nitrate Trop SW All-sky        0.000E+00  1    72043 1.000E+00 W/m2
+FSWAMPA  Ammon. Trop SW All-sky         0.000E+00  1    72044 1.000E+00 W/m2
+FSWBCPA  BC Trop SW All-sky             0.000E+00  1    72045 1.000E+00 W/m2
+FSWOAPA  Organic Trop SW All-sky        0.000E+00  1    72046 1.000E+00 W/m2
+FSWSSPA  Sea salt Trop SW All-sky       0.000E+00  1    72047 1.000E+00 W/m2
+FSWDUPA  Dust Trop SW All-sky           0.000E+00  1    72048 1.000E+00 W/m2
+FSWPMPA  All aerosol Trop SW All-sky    0.000E+00  1    72049 1.000E+00 W/m2
+FSWCTPA  Contrails Trop SW All-sky      0.000E+00  1    72050 1.000E+00 W/m2
+FSWSTPA  Strat aer Trop SW All-sky      0.000E+00  1    72051 1.000E+00 W/m2
+FLWBATA  Clear TOA LW All-sky           0.000E+00  1    72052 1.000E+00 W/m2
+FLWO3TA  Ozone TOA LW All-sky           0.000E+00  1    72053 1.000E+00 W/m2
+FLWO3sTA Strat ozone TOA LW All-sky     0.000E+00  1    72054 1.000E+00 W/m2
+FLWO3tTA Trop ozone TOA LW All-sky      0.000E+00  1    72055 1.000E+00 W/m2
+FLWCH4TA Methane TOA LW All-sky         0.000E+00  1    72056 1.000E+00 W/m2
+FLWH2OTA Strat H2O TOA LW All-sky       0.000E+00  1    72057 1.000E+00 W/m2
+FLWCO2TA CO2 TOA LW All-sky             0.000E+00  1    72058 1.000E+00 W/m2
+FLWSUTA  Sulfate TOA LW All-sky         0.000E+00  1    72059 1.000E+00 W/m2
+FLWNITA  Nitrate TOA LW All-sky         0.000E+00  1    72060 1.000E+00 W/m2
+FLWAMTA  Ammon. TOA LW All-sky          0.000E+00  1    72061 1.000E+00 W/m2
+FLWBCTA  BC TOA LW All-sky              0.000E+00  1    72062 1.000E+00 W/m2
+FLWOATA  Organic TOA LW All-sky         0.000E+00  1    72063 1.000E+00 W/m2
+FLWSSTA  Sea salt TOA LW All-sky        0.000E+00  1    72064 1.000E+00 W/m2
+FLWDUTA  Dust TOA LW All-sky            0.000E+00  1    72065 1.000E+00 W/m2
+FLWPMTA  All aerosol TOA LW All-sky     0.000E+00  1    72066 1.000E+00 W/m2
+FLWCTTA  Contrails TOA LW All-sky       0.000E+00  1    72067 1.000E+00 W/m2
+FLWSTTA  Strat aer TOA LW All-sky       0.000E+00  1    72068 1.000E+00 W/m2
+FLWBASA  Clear Surface LW All-sky       0.000E+00  1    72069 1.000E+00 W/m2
+FLWO3SA  Ozone Surface LW All-sky       0.000E+00  1    72070 1.000E+00 W/m2
+FLWO3sSA Strat ozone Surface LW All-sky 0.000E+00  1    72071 1.000E+00 W/m2
+FLWO3tSA Trop ozone Surface LW All-sky  0.000E+00  1    72072 1.000E+00 W/m2
+FLWCH4SA Methane Surface LW All-sky     0.000E+00  1    72073 1.000E+00 W/m2
+FLWH2OSA Strat H2O Surface LW All-sky   0.000E+00  1    72074 1.000E+00 W/m2
+FLWCO2SA CO2 Surface LW All-sky         0.000E+00  1    72075 1.000E+00 W/m2
+FLWSUSA  Sulfate Surface LW All-sky     0.000E+00  1    72076 1.000E+00 W/m2
+FLWNISA  Nitrate Surface LW All-sky     0.000E+00  1    72077 1.000E+00 W/m2
+FLWAMSA  Ammon. Surface LW All-sky      0.000E+00  1    72078 1.000E+00 W/m2
+FLWBCSA  BC Surface LW All-sky          0.000E+00  1    72079 1.000E+00 W/m2
+FLWOASA  Organic Surface LW All-sky     0.000E+00  1    72080 1.000E+00 W/m2
+FLWSSSA  Sea salt Surface LW All-sky    0.000E+00  1    72081 1.000E+00 W/m2
+FLWDUSA  Dust Surface LW All-sky        0.000E+00  1    72082 1.000E+00 W/m2
+FLWPMSA  All aerosol Surface LW All-sky 0.000E+00  1    72083 1.000E+00 W/m2
+FLWCTSA  Contrails Surface LW All-sky   0.000E+00  1    72084 1.000E+00 W/m2
+FLWSTSA  Strat aer Surface LW All-sky   0.000E+00  1    72085 1.000E+00 W/m2
+FLWBAPA  Clear Trop LW All-sky          0.000E+00  1    72086 1.000E+00 W/m2
+FLWO3PA  Ozone Trop LW All-sky          0.000E+00  1    72087 1.000E+00 W/m2
+FLWO3sPA Strat ozone Trop LW All-sky    0.000E+00  1    72088 1.000E+00 W/m2
+FLWO3tPA Trop ozone Trop LW All-sky     0.000E+00  1    72089 1.000E+00 W/m2
+FLWCH4PA Methane Trop LW All-sky        0.000E+00  1    72090 1.000E+00 W/m2
+FLWH2OPA Strat H2O Trop LW All-sky      0.000E+00  1    72091 1.000E+00 W/m2
+FLWCO2PA CO2 Trop LW All-sky            0.000E+00  1    72092 1.000E+00 W/m2
+FLWSUPA  Sulfate Trop LW All-sky        0.000E+00  1    72093 1.000E+00 W/m2
+FLWNIPA  Nitrate Trop LW All-sky        0.000E+00  1    72094 1.000E+00 W/m2
+FLWAMPA  Ammon. Trop LW All-sky         0.000E+00  1    72095 1.000E+00 W/m2
+FLWBCPA  BC Trop LW All-sky             0.000E+00  1    72096 1.000E+00 W/m2
+FLWOAPA  Organic Trop LW All-sky        0.000E+00  1    72097 1.000E+00 W/m2
+FLWSSPA  Sea salt Trop LW All-sky       0.000E+00  1    72098 1.000E+00 W/m2
+FLWDUPA  Dust Trop LW All-sky           0.000E+00  1    72099 1.000E+00 W/m2
+FLWPMPA  All aerosol Trop LW All-sky    0.000E+00  1    72100 1.000E+00 W/m2
+FLWCTPA  Contrails Trop LW All-sky      0.000E+00  1    72101 1.000E+00 W/m2
+FLWSTPA  Strat aer Trop LW All-sky      0.000E+00  1    72102 1.000E+00 W/m2
+FSWBATC  Clear TOA SW Clear-sky         0.000E+00  1    72103 1.000E+00 W/m2
+FSWO3TC  Ozone TOA SW Clear-sky         0.000E+00  1    72104 1.000E+00 W/m2
+FSWO3sTC Strat ozone TOA SW Clear-sky   0.000E+00  1    72105 1.000E+00 W/m2
+FSWO3tTC Trop ozone TOA SW Clear-sky    0.000E+00  1    72106 1.000E+00 W/m2
+FSWCH4TC Methane TOA SW Clear-sky       0.000E+00  1    72107 1.000E+00 W/m2
+FSWH2OTC Strat H2O TOA SW Clear-sky     0.000E+00  1    72108 1.000E+00 W/m2
+FSWCO2TC CO2 TOA SW Clear-sky           0.000E+00  1    72109 1.000E+00 W/m2
+FSWSUTC  Sulfate TOA SW Clear-sky       0.000E+00  1    72110 1.000E+00 W/m2
+FSWNITC  Nitrate TOA SW Clear-sky       0.000E+00  1    72111 1.000E+00 W/m2
+FSWAMTC  Ammon. TOA SW Clear-sky        0.000E+00  1    72112 1.000E+00 W/m2
+FSWBCTC  BC TOA SW Clear-sky            0.000E+00  1    72113 1.000E+00 W/m2
+FSWOATC  Organic TOA SW Clear-sky       0.000E+00  1    72114 1.000E+00 W/m2
+FSWSSTC  Sea salt TOA SW Clear-sky      0.000E+00  1    72115 1.000E+00 W/m2
+FSWDUTC  Dust TOA SW Clear-sky          0.000E+00  1    72116 1.000E+00 W/m2
+FSWPMTC  All aerosol TOA SW Clear-sky   0.000E+00  1    72117 1.000E+00 W/m2
+FSWCTTC  Contrails TOA SW Clear-sky     0.000E+00  1    72118 1.000E+00 W/m2
+FSWSTTC  Strat aer TOA SW Clear-sky     0.000E+00  1    72119 1.000E+00 W/m2
+FSWBASC  Clear Flux SW Surface Clear-sk 0.000E+00  1    72120 1.000E+00 W/m2
+FSWO3SC  Ozone Flux SW Surface Clear-sk 0.000E+00  1    72121 1.000E+00 W/m2
+FSWO3sSC Strat ozone Flux SW Surface Cl 0.000E+00  1    72122 1.000E+00 W/m2
+FSWO3tSC Trop ozone Flux SW Surface Cle 0.000E+00  1    72123 1.000E+00 W/m2
+FSWCH4SC Methane Flux SW Surface Clear- 0.000E+00  1    72124 1.000E+00 W/m2
+FSWH2OSC Strat H2O Flux SW Surface Clea 0.000E+00  1    72125 1.000E+00 W/m2
+FSWCO2SC CO2 Flux SW Surface Clear-sky  0.000E+00  1    72126 1.000E+00 W/m2
+FSWSUSC  Sulfate Flux SW Surface Clear- 0.000E+00  1    72127 1.000E+00 W/m2
+FSWNISC  Nitrate Flux SW Surface Clear- 0.000E+00  1    72128 1.000E+00 W/m2
+FSWAMSC  Ammon. Flux SW Surface Clear-s 0.000E+00  1    72129 1.000E+00 W/m2
+FSWBCSC  BC Flux SW Surface Clear-sky   0.000E+00  1    72130 1.000E+00 W/m2
+FSWOASC  Organic Flux SW Surface Clear- 0.000E+00  1    72131 1.000E+00 W/m2
+FSWSSSC  Sea salt Flux SW Surface Clear 0.000E+00  1    72132 1.000E+00 W/m2
+FSWDUSC  Dust Flux SW Surface Clear-sky 0.000E+00  1    72133 1.000E+00 W/m2
+FSWPMSC  All aerosol Flux SW Surface Cl 0.000E+00  1    72134 1.000E+00 W/m2
+FSWCTSC  Contrails Flux SW Surface Clea 0.000E+00  1    72135 1.000E+00 W/m2
+FSWSTSC  Strat aer Flux SW Surface Clea 0.000E+00  1    72136 1.000E+00 W/m2
+FSWBAPC  Clear Flux SW Trop Clear-sky   0.000E+00  1    72137 1.000E+00 W/m2
+FSWO3PC  Ozone Flux SW Trop Clear-sky   0.000E+00  1    72138 1.000E+00 W/m2
+FSWO3sPC Strat ozone Flux SW Trop Clear 0.000E+00  1    72139 1.000E+00 W/m2
+FSWO3tPC Trop ozone Flux SW Trop Clear- 0.000E+00  1    72140 1.000E+00 W/m2
+FSWCH4PC Methane Flux SW Trop Clear-sky 0.000E+00  1    72141 1.000E+00 W/m2
+FSWH2OPC Strat H2O Flux SW Trop Clear-s 0.000E+00  1    72142 1.000E+00 W/m2
+FSWCO2PC CO2 Flux SW Trop Clear-sky     0.000E+00  1    72143 1.000E+00 W/m2
+FSWSUPC  Sulfate Flux SW Trop Clear-sky 0.000E+00  1    72144 1.000E+00 W/m2
+FSWNIPC  Nitrate Flux SW Trop Clear-sky 0.000E+00  1    72145 1.000E+00 W/m2
+FSWAMPC  Ammon. Flux SW Trop Clear-sky  0.000E+00  1    72146 1.000E+00 W/m2
+FSWBCPC  BC Flux SW Trop Clear-sky      0.000E+00  1    72147 1.000E+00 W/m2
+FSWOAPC  Organic Flux SW Trop Clear-sky 0.000E+00  1    72148 1.000E+00 W/m2
+FSWSSPC  Sea salt Flux SW Trop Clear-sk 0.000E+00  1    72149 1.000E+00 W/m2
+FSWDUPC  Dust Flux SW Trop Clear-sky    0.000E+00  1    72150 1.000E+00 W/m2
+FSWPMPC  All aerosol Flux SW Trop Clear 0.000E+00  1    72151 1.000E+00 W/m2
+FSWCTPC  Contrails Flux SW Trop Clear-s 0.000E+00  1    72152 1.000E+00 W/m2
+FSWSTPC  Strat aer Flux SW Trop Clear-s 0.000E+00  1    72153 1.000E+00 W/m2
+FLWBATC  Clear TOA LW Clear-sky         0.000E+00  1    72154 1.000E+00 W/m2
+FLWO3TC  Ozone TOA LW Clear-sky         0.000E+00  1    72155 1.000E+00 W/m2
+FLWO3sTC Strat ozone TOA LW Clear-sky   0.000E+00  1    72156 1.000E+00 W/m2
+FLWO3tTC Trop ozone TOA LW Clear-sky    0.000E+00  1    72157 1.000E+00 W/m2
+FLWCH4TC Methane TOA LW Clear-sky       0.000E+00  1    72158 1.000E+00 W/m2
+FLWH2OTC Strat H2O TOA LW Clear-sky     0.000E+00  1    72159 1.000E+00 W/m2
+FLWCO2TC CO2 TOA LW Clear-sky           0.000E+00  1    72160 1.000E+00 W/m2
+FLWSUTC  Sulfate TOA LW Clear-sky       0.000E+00  1    72161 1.000E+00 W/m2
+FLWNITC  Nitrate TOA LW Clear-sky       0.000E+00  1    72162 1.000E+00 W/m2
+FLWAMTC  Ammon. TOA LW Clear-sky        0.000E+00  1    72163 1.000E+00 W/m2
+FLWBCTC  BC TOA LW Clear-sky            0.000E+00  1    72164 1.000E+00 W/m2
+FLWOATC  Organic TOA LW Clear-sky       0.000E+00  1    72165 1.000E+00 W/m2
+FLWSSTC  Sea salt TOA LW Clear-sky      0.000E+00  1    72166 1.000E+00 W/m2
+FLWDUTC  Dust TOA LW Clear-sky          0.000E+00  1    72167 1.000E+00 W/m2
+FLWPMTC  All aerosol TOA LW Clear-sky   0.000E+00  1    72168 1.000E+00 W/m2
+FLWCTTC  Contrails TOA LW Clear-sky     0.000E+00  1    72169 1.000E+00 W/m2
+FLWSTTC  Strat aer TOA LW Clear-sky     0.000E+00  1    72170 1.000E+00 W/m2
+FLWBASC  Clear Surface LW Clear-sky     0.000E+00  1    72171 1.000E+00 W/m2
+FLWO3SC  Ozone Surface LW Clear-sky     0.000E+00  1    72172 1.000E+00 W/m2
+FLWO3sSC Strat ozone Surface LW Clear-s 0.000E+00  1    72173 1.000E+00 W/m2
+FLWO3tSC Trop ozone Surface LW Clear-sk 0.000E+00  1    72174 1.000E+00 W/m2
+FLWCH4SC Methane Surface LW Clear-sky   0.000E+00  1    72175 1.000E+00 W/m2
+FLWH2OSC Strat H2O Surface LW Clear-sky 0.000E+00  1    72176 1.000E+00 W/m2
+FLWCO2SC CO2 Surface LW Clear-sky       0.000E+00  1    72177 1.000E+00 W/m2
+FLWSUSC  Sulfate Surface LW Clear-sky   0.000E+00  1    72178 1.000E+00 W/m2
+FLWNISC  Nitrate Surface LW Clear-sky   0.000E+00  1    72179 1.000E+00 W/m2
+FLWAMSC  Ammon. Surface LW Clear-sky    0.000E+00  1    72180 1.000E+00 W/m2
+FLWBCSC  BC Surface LW Clear-sky        0.000E+00  1    72181 1.000E+00 W/m2
+FLWOASC  Organic Surface LW Clear-sky   0.000E+00  1    72182 1.000E+00 W/m2
+FLWSSSC  Sea salt Surface LW Clear-sky  0.000E+00  1    72183 1.000E+00 W/m2
+FLWDUSC  Dust Surface LW Clear-sky      0.000E+00  1    72184 1.000E+00 W/m2
+FLWPMSC  All aerosol Surface LW Clear-s 0.000E+00  1    72185 1.000E+00 W/m2
+FLWCTSC  Contrails Surface LW Clear-sky 0.000E+00  1    72186 1.000E+00 W/m2
+FLWSTSC  Strat aer Surface LW Clear-sky 0.000E+00  1    72187 1.000E+00 W/m2
+FLWBAPC  Clear Trop LW Clear-sky        0.000E+00  1    72188 1.000E+00 W/m2
+FLWO3PC  Ozone Trop LW Clear-sky        0.000E+00  1    72189 1.000E+00 W/m2
+FLWO3sPC Strat ozone Trop LW Clear-sky  0.000E+00  1    72190 1.000E+00 W/m2
+FLWO3tPC Trop ozone Trop LW Clear-sky   0.000E+00  1    72191 1.000E+00 W/m2
+FLWCH4PC Methane Trop LW Clear-sky      0.000E+00  1    72192 1.000E+00 W/m2
+FLWH2OPC Strat H2O Trop LW Clear-sky    0.000E+00  1    72193 1.000E+00 W/m2
+FLWCO2PC CO2 Trop LW Clear-sky          0.000E+00  1    72194 1.000E+00 W/m2
+FLWSUPC  Sulfate Trop LW Clear-sky      0.000E+00  1    72195 1.000E+00 W/m2
+FLWNIPC  Nitrate Trop LW Clear-sky      0.000E+00  1    72196 1.000E+00 W/m2
+FLWAMPC  Ammon. Trop LW Clear-sky       0.000E+00  1    72197 1.000E+00 W/m2
+FLWBCPC  BC Trop LW Clear-sky           0.000E+00  1    72198 1.000E+00 W/m2
+FLWOAPC  Organic Trop LW Clear-sky      0.000E+00  1    72199 1.000E+00 W/m2
+FLWSSPC  Sea salt Trop LW Clear-sky     0.000E+00  1    72200 1.000E+00 W/m2
+FLWDUPC  Dust Trop LW Clear-sky         0.000E+00  1    72201 1.000E+00 W/m2
+FLWPMPC  All aerosol Trop LW Clear-sky  0.000E+00  1    72202 1.000E+00 W/m2
+FLWCTPC  Contrails Trop LW Clear-sky    0.000E+00  1    72203 1.000E+00 W/m2
+FLWSTPC  Strat aer Trop LW Clear-sky    0.000E+00  1    72204 1.000E+00 W/m2
+AODBA550 Clear aer. op. depth (550nm)   0.000E+00  1    72205 1.000E+00 -
+COLO3    Ozone column density           0.000E+00  1    72206 1.000E+00 molec/cm2
+COLO3s   Strat ozone column density     0.000E+00  1    72207 1.000E+00 molec/cm2
+COLO3t   Trop ozone column density      0.000E+00  1    72208 1.000E+00 molec/cm2
+COLCH4   Methane column density         0.000E+00  1    72209 1.000E+00 molec/cm2
+COLH2O   Strat H2O column density       0.000E+00  1    72210 1.000E+00 molec/cm2
+COLCO2   CO2 column density             0.000E+00  1    72211 1.000E+00 molec/cm2
+AODSU550 Sulfate aer. op. depth (550nm) 0.000E+00  1    72212 1.000E+00 -
+AODNI550 Nitrate aer. op. depth (550nm) 0.000E+00  1    72213 1.000E+00 -
+AODAM550 Ammon. aer. op. depth (550nm)  0.000E+00  1    72214 1.000E+00 -
+AODBC550 BC aer. op. depth (550nm)      0.000E+00  1    72215 1.000E+00 -
+AODOA550 Organic aer. op. depth (550nm) 0.000E+00  1    72216 1.000E+00 -
+AODSS550 Sea salt aer. op. depth (550nm 0.000E+00  1    72217 1.000E+00 -
+AODDU550 Dust aer. op. depth (550nm)    0.000E+00  1    72218 1.000E+00 -
+AODPM550 All aerosol aer. op. depth (55 0.000E+00  1    72219 1.000E+00 -
+AODCT550 Contrails aer. op. depth (550n 0.000E+00  1    72220 1.000E+00 -
+AODST550 Strat aer aer. op. depth (550n 0.000E+00  1    72221 1.000E+00 -
+SSABA550 Clear Single scat. alb.(550nm) 0.000E+00  1    72222 1.000E+00 -
+SSAO3550 Ozone Single scat. alb.(550nm) 0.000E+00  1    72223 1.000E+00 -
+SSAO3s55 Strat ozone Single scat. alb.( 0.000E+00  1    72224 1.000E+00 -
+SSAO3t55 Trop ozone Single scat. alb.(5 0.000E+00  1    72225 1.000E+00 -
+SSACH455 Methane Single scat. alb.(550n 0.000E+00  1    72226 1.000E+00 -
+SSAH2O55 Strat H2O Single scat. alb.(55 0.000E+00  1    72227 1.000E+00 -
+SSACO255 CO2 Single scat. alb.(550nm)   0.000E+00  1    72228 1.000E+00 -
+SSASU550 Sulfate Single scat. alb.(550n 0.000E+00  1    72229 1.000E+00 -
+SSANI550 Nitrate Single scat. alb.(550n 0.000E+00  1    72230 1.000E+00 -
+SSAAM550 Ammon. Single scat. alb.(550nm 0.000E+00  1    72231 1.000E+00 -
+SSABC550 BC Single scat. alb.(550nm)    0.000E+00  1    72232 1.000E+00 -
+SSAOA550 Organic Single scat. alb.(550n 0.000E+00  1    72233 1.000E+00 -
+SSASS550 Sea salt Single scat. alb.(550 0.000E+00  1    72234 1.000E+00 -
+SSADU550 Dust Single scat. alb.(550nm)  0.000E+00  1    72235 1.000E+00 -
+SSAPM550 All aerosol Single scat. alb.( 0.000E+00  1    72236 1.000E+00 -
+SSACT550 Contrails Single scat. alb.(55 0.000E+00  1    72237 1.000E+00 -
+SSAST550 Strat aer Single scat. alb.(55 0.000E+00  1    72238 1.000E+00 -
+ASMBA550 Clear asym param (550nm)       0.000E+00  1    72239 1.000E+00 -
+ASMO3550 Ozone asym param (550nm)       0.000E+00  1    72240 1.000E+00 -
+ASMO3s55 Strat ozone asym param (550nm) 0.000E+00  1    72241 1.000E+00 -
+ASMO3t55 Trop ozone asym param (550nm)  0.000E+00  1    72242 1.000E+00 -
+ASMCH455 Methane asym param (550nm)     0.000E+00  1    72243 1.000E+00 -
+ASMH2O55 Strat H2O asym param (550nm)   0.000E+00  1    72244 1.000E+00 -
+ASMCO255 CO2 asym param (550nm)         0.000E+00  1    72245 1.000E+00 -
+ASMSU550 Sulfate asym param (550nm)     0.000E+00  1    72246 1.000E+00 -
+ASMNI550 Nitrate asym param (550nm)     0.000E+00  1    72247 1.000E+00 -
+ASMAM550 Ammon. asym param (550nm)      0.000E+00  1    72248 1.000E+00 -
+ASMBC550 BC asym param (550nm)          0.000E+00  1    72249 1.000E+00 -
+ASMOA550 Organic asym param (550nm)     0.000E+00  1    72250 1.000E+00 -
+ASMSS550 Sea salt asym param (550nm)    0.000E+00  1    72251 1.000E+00 -
+ASMDU550 Dust asym param (550nm)        0.000E+00  1    72252 1.000E+00 -
+ASMPM550 All aerosol asym param (550nm) 0.000E+00  1    72253 1.000E+00 -
+ASMCT550 Contrails asym param (550nm)   0.000E+00  1    72254 1.000E+00 -
+ASMST550 Strat aer asym param (550nm)   0.000E+00  1    72255 1.000E+00 -
+AODBA    Clear aer. op. depth (nm)      0.000E+00  1    72256 1.000E+00 -
+AODO3    Ozone aer. op. depth (nm)      0.000E+00  1    72257 1.000E+00 -
+AODO3s   Strat ozone aer. op. depth (nm 0.000E+00  1    72258 1.000E+00 -
+AODO3t   Trop ozone aer. op. depth (nm) 0.000E+00  1    72259 1.000E+00 -
+AODCH4   Methane aer. op. depth (nm)    0.000E+00  1    72260 1.000E+00 -
+AODH2O   Strat H2O aer. op. depth (nm)  0.000E+00  1    72261 1.000E+00 -
+AODCO2   CO2 aer. op. depth (nm)        0.000E+00  1    72262 1.000E+00 -
+AODSU    Sulfate aer. op. depth (nm)    0.000E+00  1    72263 1.000E+00 -
+AODNI    Nitrate aer. op. depth (nm)    0.000E+00  1    72264 1.000E+00 -
+AODAM    Ammon. aer. op. depth (nm)     0.000E+00  1    72265 1.000E+00 -
+AODBC    BC aer. op. depth (nm)         0.000E+00  1    72266 1.000E+00 -
+AODOA    Organic aer. op. depth (nm)    0.000E+00  1    72267 1.000E+00 -
+AODSS    Sea salt aer. op. depth (nm)   0.000E+00  1    72268 1.000E+00 -
+AODDU    Dust aer. op. depth (nm)       0.000E+00  1    72269 1.000E+00 -
+AODPM    All aerosol aer. op. depth (nm 0.000E+00  1    72270 1.000E+00 -
+AODCT    Contrails aer. op. depth (nm)  0.000E+00  1    72271 1.000E+00 -
+AODST    Strat aer aer. op. depth (nm)  0.000E+00  1    72272 1.000E+00 -
+SSABA    Clear Single scat. alb.(nm)    0.000E+00  1    72273 1.000E+00 -
+SSAO3    Ozone Single scat. alb.(nm)    0.000E+00  1    72274 1.000E+00 -
+SSAO3s   Strat ozone Single scat. alb.( 0.000E+00  1    72275 1.000E+00 -
+SSAO3t   Trop ozone Single scat. alb.(n 0.000E+00  1    72276 1.000E+00 -
+SSACH4   Methane Single scat. alb.(nm)  0.000E+00  1    72277 1.000E+00 -
+SSAH2O   Strat H2O Single scat. alb.(nm 0.000E+00  1    72278 1.000E+00 -
+SSACO2   CO2 Single scat. alb.(nm)      0.000E+00  1    72279 1.000E+00 -
+SSASU    Sulfate Single scat. alb.(nm)  0.000E+00  1    72280 1.000E+00 -
+SSANI    Nitrate Single scat. alb.(nm)  0.000E+00  1    72281 1.000E+00 -
+SSAAM    Ammon. Single scat. alb.(nm)   0.000E+00  1    72282 1.000E+00 -
+SSABC    BC Single scat. alb.(nm)       0.000E+00  1    72283 1.000E+00 -
+SSAOA    Organic Single scat. alb.(nm)  0.000E+00  1    72284 1.000E+00 -
+SSASS    Sea salt Single scat. alb.(nm) 0.000E+00  1    72285 1.000E+00 -
+SSADU    Dust Single scat. alb.(nm)     0.000E+00  1    72286 1.000E+00 -
+SSAPM    All aerosol Single scat. alb.( 0.000E+00  1    72287 1.000E+00 -
+SSACT    Contrails Single scat. alb.(nm 0.000E+00  1    72288 1.000E+00 -
+SSAST    Strat aer Single scat. alb.(nm 0.000E+00  1    72289 1.000E+00 -
+ASMBA    Clear asym param (nm)          0.000E+00  1    72290 1.000E+00 -
+ASMO3    Ozone asym param (nm)          0.000E+00  1    72291 1.000E+00 -
+ASMO3s   Strat ozone asym param (nm)    0.000E+00  1    72292 1.000E+00 -
+ASMO3t   Trop ozone asym param (nm)     0.000E+00  1    72293 1.000E+00 -
+ASMCH4   Methane asym param (nm)        0.000E+00  1    72294 1.000E+00 -
+ASMH2O   Strat H2O asym param (nm)      0.000E+00  1    72295 1.000E+00 -
+ASMCO2   CO2 asym param (nm)            0.000E+00  1    72296 1.000E+00 -
+ASMSU    Sulfate asym param (nm)        0.000E+00  1    72297 1.000E+00 -
+ASMNI    Nitrate asym param (nm)        0.000E+00  1    72298 1.000E+00 -
+ASMAM    Ammon. asym param (nm)         0.000E+00  1    72299 1.000E+00 -
+ASMBC    BC asym param (nm)             0.000E+00  1    72300 1.000E+00 -
+ASMOA    Organic asym param (nm)        0.000E+00  1    72301 1.000E+00 -
+ASMSS    Sea salt asym param (nm)       0.000E+00  1    72302 1.000E+00 -
+ASMDU    Dust asym param (nm)           0.000E+00  1    72303 1.000E+00 -
+ASMPM    All aerosol asym param (nm)    0.000E+00  1    72304 1.000E+00 -
+ASMCT    Contrails asym param (nm)      0.000E+00  1    72305 1.000E+00 -
+ASMST    Strat aer asym param (nm)      0.000E+00  1    72306 1.000E+00 -
+AODBA    Clear aer. op. depth (nm)      0.000E+00  1    72307 1.000E+00 -
+AODO3    Ozone aer. op. depth (nm)      0.000E+00  1    72308 1.000E+00 -
+AODO3s   Strat ozone aer. op. depth (nm 0.000E+00  1    72309 1.000E+00 -
+AODO3t   Trop ozone aer. op. depth (nm) 0.000E+00  1    72310 1.000E+00 -
+AODCH4   Methane aer. op. depth (nm)    0.000E+00  1    72311 1.000E+00 -
+AODH2O   Strat H2O aer. op. depth (nm)  0.000E+00  1    72312 1.000E+00 -
+AODCO2   CO2 aer. op. depth (nm)        0.000E+00  1    72313 1.000E+00 -
+AODSU    Sulfate aer. op. depth (nm)    0.000E+00  1    72314 1.000E+00 -
+AODNI    Nitrate aer. op. depth (nm)    0.000E+00  1    72315 1.000E+00 -
+AODAM    Ammon. aer. op. depth (nm)     0.000E+00  1    72316 1.000E+00 -
+AODBC    BC aer. op. depth (nm)         0.000E+00  1    72317 1.000E+00 -
+AODOA    Organic aer. op. depth (nm)    0.000E+00  1    72318 1.000E+00 -
+AODSS    Sea salt aer. op. depth (nm)   0.000E+00  1    72319 1.000E+00 -
+AODDU    Dust aer. op. depth (nm)       0.000E+00  1    72320 1.000E+00 -
+AODPM    All aerosol aer. op. depth (nm 0.000E+00  1    72321 1.000E+00 -
+AODCT    Contrails aer. op. depth (nm)  0.000E+00  1    72322 1.000E+00 -
+AODST    Strat aer aer. op. depth (nm)  0.000E+00  1    72323 1.000E+00 -
+SSABA    Clear Single scat. alb.(nm)    0.000E+00  1    72324 1.000E+00 -
+SSAO3    Ozone Single scat. alb.(nm)    0.000E+00  1    72325 1.000E+00 -
+SSAO3s   Strat ozone Single scat. alb.( 0.000E+00  1    72326 1.000E+00 -
+SSAO3t   Trop ozone Single scat. alb.(n 0.000E+00  1    72327 1.000E+00 -
+SSACH4   Methane Single scat. alb.(nm)  0.000E+00  1    72328 1.000E+00 -
+SSAH2O   Strat H2O Single scat. alb.(nm 0.000E+00  1    72329 1.000E+00 -
+SSACO2   CO2 Single scat. alb.(nm)      0.000E+00  1    72330 1.000E+00 -
+SSASU    Sulfate Single scat. alb.(nm)  0.000E+00  1    72331 1.000E+00 -
+SSANI    Nitrate Single scat. alb.(nm)  0.000E+00  1    72332 1.000E+00 -
+SSAAM    Ammon. Single scat. alb.(nm)   0.000E+00  1    72333 1.000E+00 -
+SSABC    BC Single scat. alb.(nm)       0.000E+00  1    72334 1.000E+00 -
+SSAOA    Organic Single scat. alb.(nm)  0.000E+00  1    72335 1.000E+00 -
+SSASS    Sea salt Single scat. alb.(nm) 0.000E+00  1    72336 1.000E+00 -
+SSADU    Dust Single scat. alb.(nm)     0.000E+00  1    72337 1.000E+00 -
+SSAPM    All aerosol Single scat. alb.( 0.000E+00  1    72338 1.000E+00 -
+SSACT    Contrails Single scat. alb.(nm 0.000E+00  1    72339 1.000E+00 -
+SSAST    Strat aer Single scat. alb.(nm 0.000E+00  1    72340 1.000E+00 -
+ASMBA    Clear asym param (     nm)nm)  0.000E+00  1    72341 1.000E+00 -
+ASMO3    Ozone asym param (     nm)nm)  0.000E+00  1    72342 1.000E+00 -
+ASMO3s   Strat ozone asym param (     n 0.000E+00  1    72343 1.000E+00 -
+ASMO3t   Trop ozone asym param (     nm 0.000E+00  1    72344 1.000E+00 -
+ASMCH4   Methane asym param (     nm)nm 0.000E+00  1    72345 1.000E+00 -
+ASMH2O   Strat H2O asym param (     nm) 0.000E+00  1    72346 1.000E+00 -
+ASMCO2   CO2 asym param (     nm)nm)    0.000E+00  1    72347 1.000E+00 -
+ASMSU    Sulfate asym param (     nm)nm 0.000E+00  1    72348 1.000E+00 -
+ASMNI    Nitrate asym param (     nm)nm 0.000E+00  1    72349 1.000E+00 -
+ASMAM    Ammon. asym param (     nm)nm) 0.000E+00  1    72350 1.000E+00 -
+ASMBC    BC asym param (     nm)nm)     0.000E+00  1    72351 1.000E+00 -
+ASMOA    Organic asym param (     nm)nm 0.000E+00  1    72352 1.000E+00 -
+ASMSS    Sea salt asym param (     nm)n 0.000E+00  1    72353 1.000E+00 -
+ASMDU    Dust asym param (     nm)nm)   0.000E+00  1    72354 1.000E+00 -
+ASMPM    All aerosol asym param (     n 0.000E+00  1    72355 1.000E+00 -
+ASMCT    Contrails asym param (     nm) 0.000E+00  1    72356 1.000E+00 -
+ASMST    Strat aer asym param (     nm) 0.000E+00  1    72357 1.000E+00 -
